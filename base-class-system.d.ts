@@ -20,7 +20,7 @@ declare global {
     K extends keyof Prototype,
     Constructor,
     Prototype,
-    ParentPrototype
+    ParentPrototype,
   > = K extends keyof ParentPrototype
     ? Prototype & { constructor: Constructor; parent: ParentPrototype }
     : Prototype & { constructor: Constructor };
@@ -29,7 +29,7 @@ declare global {
     Key extends keyof Prototype,
     Constructor,
     Prototype,
-    ParentPrototype
+    ParentPrototype,
   > = ReplaceThisParameter<
     Prototype[Key],
     ClassMethodThis<Key, Constructor, Prototype, ParentPrototype>
@@ -46,7 +46,7 @@ declare global {
 
   type ClassStaticMember<
     Key extends keyof Prototype,
-    Prototype
+    Prototype,
   > = Prototype[Key] extends (
     this: infer This,
     ...args: infer Args
@@ -79,10 +79,10 @@ declare global {
       this: this,
       instanceDefinition: ClassDefinition<
         ChildConstructor,
-        ChildConstructor["prototype"],
-        this["prototype"]
+        ChildConstructor['prototype'],
+        this['prototype']
       >,
-      staticDefinition: ClassStaticDefinition<ChildConstructor["prototype"]>
+      staticDefinition: ClassStaticDefinition<ChildConstructor['prototype']>,
     ): ChildConstructor;
     readonly prototype: ClassPrototype<this, Instance, Static>;
   }
