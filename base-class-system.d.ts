@@ -82,7 +82,7 @@ declare global {
         ChildConstructor['prototype'],
         this['prototype']
       >,
-      staticDefinition: ClassStaticDefinition<ChildConstructor['prototype']>,
+      staticDefinition?: ClassStaticDefinition<ChildConstructor['prototype']>,
     ): ChildConstructor;
     readonly prototype: ClassPrototype<this, Instance, Static>;
   }
