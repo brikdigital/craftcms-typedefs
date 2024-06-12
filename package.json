@@ -1,0 +1,22 @@
+{
+  "name": "@brik-digital/craftcms-typedefs",
+  "version": "1.0.0",
+  "description": "Type definitions for the Craft CMS JS globals, most importantly, Garnish",
+  "keywords": [
+    "types",
+    "craftcms",
+    "typescript"
+  ],
+  "author": "Alyxia Sother <alyxia@riseup.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "watch": "tsc --noEmit --watch",
+    "lint": "eslint . --ext .ts",
+    "check-fmt": "prettier --check '**/*.ts'",
+    "prepare": "tsc"
+  }
+}
