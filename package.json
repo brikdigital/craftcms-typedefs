@@ -10,6 +10,9 @@
   "author": "Alyxia Sother <alyxia@riseup.net>",
   "license": "MIT",
   "devDependencies": {
+    "@types/jquery": "^3.5.30",
+    "@types/jqueryui": "^1.12.22",
+    "@types/timepicker": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^7.13.0",
     "@typescript-eslint/parser": "^7.13.0",
     "eslint": "^8.57.0",

@@ -2,7 +2,7 @@
   "include": ["*.ts"],
   "compilerOptions": {
     "module": "ES2015",
-    "lib": ["ES6"],
+    "lib": ["ES6", "DOM"],
     "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
