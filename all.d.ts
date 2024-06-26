@@ -1,3 +1,3 @@
 import './base-class-system';
-import './garnish';
+import './garnish/garnish';
 import './craft';
