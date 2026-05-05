@@ -1,4 +1,9 @@
 import './base-class-system';
+
 import './garnish/garnish';
-import './craft';
+import './garnish/MultiFunctionBtn';
+
+import './craft/root';
+import './craft/cp';
 import './craft/CraftData';
+import './craft/JqueryUI';
