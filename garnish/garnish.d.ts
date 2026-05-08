@@ -9,5 +9,7 @@ declare global {
       new (): Base;
     }
     let Base: BaseConstructor;
+
+    function hasAttr(el: HTMLElement | JQuery<HTMLElement>, attr: string): boolean;
   }
 }
