@@ -10,9 +10,9 @@ declare global {
     function getActionUrl(alias: string): string;
 
     function sendActionRequest(
-        method: HTTPMethod,
-        actionUrl: string,
-        data: string | Record<string, unknown>
+      method: HTTPMethod,
+      actionUrl: string,
+      data: string | Record<string, unknown>,
     ): Promise<unknown>;
     function downloadFromUrl(
       method: HTTPMethod,

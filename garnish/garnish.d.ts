@@ -10,6 +10,9 @@ declare global {
     }
     let Base: BaseConstructor;
 
-    function hasAttr(el: HTMLElement | JQuery<HTMLElement>, attr: string): boolean;
+    function hasAttr(
+      el: HTMLElement | JQuery<HTMLElement>,
+      attr: string,
+    ): boolean;
   }
 }
